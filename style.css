@@ -126,7 +126,7 @@ nav div p{
     width: 100%!important; 
     height: auto;
     background: linear-gradient(rgb(28, 133, 204), rgb(250, 250, 250)) ;
-    margin-top: -3px;
+    margin-top: -4px;
     display: flex;
     text-align: center;
     flex-wrap: wrap;
@@ -155,7 +155,7 @@ nav div p{
   }
   .abt-hospital{
   display: flex;
-  margin-top: 3rem;
+  margin-top: 5rem;
   gap: 15px;
   width: 100%;
   justify-content: center;
@@ -181,21 +181,24 @@ nav div p{
   .abt-text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center!important;
     align-items: center;
-
+    width: 600px;
+    line-height: 45px; 
+   
   }
   .abt-text h2{
     text-align: center;
     color: rgb(75, 72, 72);
     font-family: 'Times New Roman', Times, serif;
     font-weight: 100;
+   
   }
   .abt-text p{
-    line-height: 25px;
+    line-height: 20px;
     color: grey;
     font-weight: 100;
-    font-size: 14px;
+    font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
  
@@ -514,7 +517,7 @@ flex-wrap: wrap;
   font-size: 1vw!important;
 }
 .info-texts h2{
-  font-size: 2vw!important;
+  font-size: 3.5vw!important;
 }
 .info-texts{
 display: flex!important;
@@ -627,9 +630,25 @@ margin-top: 2rem;
   .abt-hospital{
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .abt-hospital img{
     width: 100%!important;
+}
+.abt-text{
+  width: 530px;
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.abt-text h2{
+  font-size: 14px;
+}
+.abt-text p{
+  font-size: 10px;
+
 }
 .text-overlay {
   width: 400px!important;
@@ -654,7 +673,7 @@ margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center!important;
-  align-items: center;
+  align-items: center!important;
 }
 .info-sec h2{
   font-size: 20px!important;
@@ -728,6 +747,14 @@ justify-content: center;
         flex-wrap: wrap;
         font-size: 10px;
         
+    }
+    .abt-text{
+      width: 320px;
+      display: flex!important;
+      align-items: center!important;
+      justify-content: center!important;
+      text-align: center!important;
+      flex-wrap: wrap;
     }
     .dr-sec-texts,.dr-sec-img{
      margin-left: -60px;
