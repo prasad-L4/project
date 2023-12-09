@@ -596,7 +596,7 @@ margin-top: 2rem;
   justify-content: center;
 }
 .footer-first-sec h3,.footer-first-sec h4,.footer-scnd-sec h3 {
-  color: white;
+  color: white!important;
   font-weight: 100;
   letter-spacing: 2px;
   margin-top: 1rem;
