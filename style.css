@@ -3,6 +3,13 @@
     padding: 0;
     margin: 0;
 }
+header{
+   width: 100%;
+   position: fixed;
+   top: 0;
+   z-index: 99;
+   background-color: white;
+}
 .head{
     display: flex;
     justify-content: center;
@@ -30,18 +37,14 @@ nav{
    color: white;
    align-items: center;
    height: 50px; 
-     
+   
 }
 .navbar{
     display: flex;
     align-items: center;
     width: 70%;
     justify-content: space-between;
-   
-
-
 }
-
 nav button{
    background-color: transparent;
    border: 0;
@@ -62,6 +65,7 @@ nav div p{
     position: relative;
     display: inline-block;
     width: 100%;
+    margin-top: 6rem;
   }
   
   .image-overlay {
@@ -104,8 +108,6 @@ nav div p{
     font-size: 2vw;
     margin-top: 15px;
   }
-  
-  
   .home-titles button {
     background-color:transparent; 
     color: white;
@@ -132,11 +134,6 @@ nav div p{
     justify-content: center;
     gap: 5px;
     align-items: center;
-    
-
-
-    
-
   }
   .cards div{
     background-color: white;
@@ -144,16 +141,13 @@ nav div p{
     height: 170px;
     margin-top: 2rem;
     padding-top: 2rem;
-    margin-bottom: 17px;
-    
-
+    margin-bottom: 17px; 
 }
   .cards img{
     width: 210px;
     height: 120px;
     object-fit: cover;
     margin-top: .5rem;
-
   }
   .cards h5{
     font-family: 'Times New Roman', Times, serif;
@@ -210,6 +204,71 @@ nav div p{
    color:rgb(28, 133, 204) ;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+  .abt-doctor-card {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+margin-top: 5rem;
+flex-wrap: wrap;
+}
+
+.dr-card h2{
+  text-align: center;
+  margin-top: 5rem;
+  color: rgb(28, 133, 204);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+.abt-doctor-card img {
+  display: block;
+  height: auto;
+  border-radius: 20px;
+}
+
+.text-overlay {
+width: 50%;
+  text-align: center;
+  color: white; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+line-height: 25px;
+ flex-direction: column;
+ padding-top: 2rem;
+ background: url(./images/bg-card.png);
+ border-radius: 20px;
+}
+
+.text-overlay h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color:rgb(59, 56, 56) ;
+  font-weight: 100;
+  margin-top: 1rem;
+}
+.text-overlay p {
+  font-size: 13px; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(59, 56, 56);
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.dr-img{
+  display: flex;
+  align-items: center;
+}
+.dr-img img{
+  object-fit: cover;
+  height: 250px;
+  align-items: center;
+}
+  
   
 
 
@@ -218,6 +277,7 @@ nav div p{
     .head img{
         width: 50px;
     }
+   
     .head hr{
         width: 150px;
     }
@@ -256,5 +316,11 @@ justify-content: center;
     .abt-hospital-texts{
         width: 100%;
         
+    }
+    .text-overlay {
+      width: 90%;
+    }
+    .dr-img img{
+      width: 100%;
     }
 }
