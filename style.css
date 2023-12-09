@@ -5,7 +5,7 @@
 }
 header{
    width: 100%;
-   position: fixed;
+  
    top: 0;
    z-index: 99;
    background-color: white;
@@ -36,8 +36,7 @@ nav{
     background-color: rgb(28, 133, 204);
    color: white;
    align-items: center;
-   height: 50px; 
-   
+   height: 50px;  
 }
 .navbar{
     display: flex;
@@ -65,7 +64,8 @@ nav div p{
     position: relative;
     display: inline-block;
     width: 100%;
-    margin-top: 6rem;
+    
+    
   }
   
   .image-overlay {
@@ -83,6 +83,7 @@ nav div p{
     width: 100%;
     height: auto;
     z-index: 0;
+    
   }
   
   .home-titles {
@@ -92,9 +93,7 @@ nav div p{
     transform: translate(-50%, -50%);
     text-align: center;
     color: white; 
-    z-index: 2;
-    
-    
+    z-index: 2; 
   }
   .home-titles h2{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -124,10 +123,10 @@ nav div p{
    margin-top: 15px;
   }
   .cards {
-    width: 100%; 
+    width: 100%!important; 
     height: auto;
     background: linear-gradient(rgb(28, 133, 204), rgb(250, 250, 250)) ;
-    margin-top: -4px;
+    margin-top: -3px;
     display: flex;
     text-align: center;
     flex-wrap: wrap;
@@ -137,7 +136,7 @@ nav div p{
   }
   .cards div{
     background-color: white;
-    width: 300px;
+    width: 250px;
     height: 170px;
     margin-top: 2rem;
     padding-top: 2rem;
@@ -155,12 +154,13 @@ nav div p{
     color: rgb(28, 133, 204);
   }
   .abt-hospital{
-    display: flex;
-    flex-wrap: wrap;
- margin-top: 3rem;
- width: 100%;
- justify-content: center;
- gap: 17px;
+  display: flex;
+  margin-top: 3rem;
+  gap: 15px;
+  width: 100%;
+  justify-content: center;
+
+
    
   }
   article h5{
@@ -172,30 +172,35 @@ nav div p{
     letter-spacing: 1px;
   }
   .abt-hospital img{
-    width: 40%;
-    height: 200px;
+    width: 400px!important;
+    height: 250px;
     object-fit: cover;
+  
+    
   }
-  .abt-hospital-texts{
-    width: 50%;
-    justify-content: center;
-    align-items: center;
+  .abt-text{
     display: flex;
     flex-direction: column;
-    color: rgb(100, 98, 98);
-   
+    justify-content: center;
+    align-items: center;
+
   }
-  .abt-hospital-texts h3{
+  .abt-text h2{
+    text-align: center;
+    color: rgb(75, 72, 72);
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 100;
   }
-  .abt-hospital-texts p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 11px;
+  .abt-text p{
+    line-height: 25px;
     color: grey;
-    font-weight: 200;
-    margin-top: 15px;
+    font-weight: 100;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  .abt-hospital-texts button{
+ 
+  .abt-text button{
+   
     margin-top: 1rem;
     width: 99px;
     height:28px;
@@ -204,14 +209,48 @@ nav div p{
    color:rgb(28, 133, 204) ;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  .abt-doctor-card {
-  position: relative;
-  width: 100%;
+ .dr-sec{
+  display: flex!important;
+  width: 80%;
+ justify-content: space-around!important;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+  margin-left: 60px;
+  
+ }
+ .dr-title{
+  color: #2596be;
+  text-align: center;
+  margin-top: 4rem;
+ }
+ .dr-sec-texts{
+  background: url('./images/bg-card.png');
+
   display: flex;
-  justify-content: space-around;
-margin-top: 5rem;
-flex-wrap: wrap;
-}
+  width: 50%;
+  border-radius: 10px;
+  height: auto;
+  align-items: center;
+
+ }
+ .dr-sec-text h3{
+color: rgb(77, 76, 76)!important;
+font-family: 'Times New Roman', Times, serif;
+font-weight: 100;
+ }
+ .dr-sec-text p{
+  color: rgb(77, 76, 76);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 25px;
+ }
+ .dr-sec-img img{
+  width: 300px!important;
+ }
+ 
+
 
 .dr-card h2{
   text-align: center;
@@ -222,17 +261,16 @@ flex-wrap: wrap;
 }
 
 .abt-doctor-card img {
-  display: block;
   height: auto;
   border-radius: 20px;
 }
 
 .text-overlay {
-width: 50%;
+width: 500px;
   text-align: center;
   color: white; 
   display: flex;
-  flex-wrap: wrap;
+  
   justify-content: center;
 line-height: 25px;
  flex-direction: column;
@@ -265,7 +303,6 @@ line-height: 25px;
 }
 .dr-img img{
   object-fit: cover;
-  height: 250px;
   align-items: center;
 }
 .cmpny-logos{
@@ -274,13 +311,15 @@ gap: 15px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  width: 90%;
 
 }
 .cmpny-logos img{
   width: 100px;
   height: 100px;
 }
+
 .service{
   margin-top: 2rem;
   padding-bottom: 3rem;
@@ -292,7 +331,7 @@ gap: 15px;
 .service h3,.reviews h3,.gallery h3{
 text-align: center!important;
 font-family: 'Times New Roman', Times, serif;
-color: #2596be;
+color: rgb(28, 133, 204);
 font-weight: 100;
 }
 .service-section{
@@ -301,6 +340,7 @@ justify-content: center;
 align-items: center;
 gap: 25px;
 flex-wrap: wrap;
+
 }
 .service-section div{
   background-color:#2596be;
@@ -320,16 +360,16 @@ flex-wrap: wrap;
 .reviews{
   display: flex;
   justify-content:center ;
-  margin-top: 4rem;
+  margin-top: 6rem;
   flex-direction: column;
   align-items: center;
 }
 .review-card{
   display: flex;
-  background-color: #2596be;
+  background-color: rgb(28, 133, 204);
   gap: 10px;
   border-radius: 8px;
-  margin-top: 4rem;
+  margin-top:5rem;
 
  width: 40%;
   align-items: center;
@@ -371,7 +411,7 @@ flex-wrap: wrap;
 }
 .review-card-1{
   display: flex;
-  background-color: #2596be;
+  background-color: rgb(28, 133, 204);
   width: 300px;
   margin-top: 3rem;
   height: 130px;
@@ -404,7 +444,7 @@ flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   width: 70%;
-  margin-top: 2rem;
+  margin-top: 3rem;
   flex-wrap: wrap;
 }
 .profile-card{
@@ -461,25 +501,40 @@ flex-wrap: wrap;
   height: 40px;
   border: none;
 }
-.info-section{
-  display: flex;
-  width: 100%;
-  align-items: center;
-  line-height: 40px;
+.info-sec{
+  display: flex!important;
   flex-wrap: wrap;
-  margin-top: 3rem;
-  justify-content: center;
-  gap:15px ;
+  justify-content: space-between!important;
+  margin-top: 5rem;
+  margin-left: px;
+ 
+  
 }
-.info-titles h2,h3{
-  color: rgb(0, 128, 115);
+.info-texts p{
+  font-size: 1vw!important;
+}
+.info-texts h2{
+  font-size: 2vw!important;
+}
+.info-texts{
+display: flex!important;
+flex-direction: column;
+align-items: center!important;
+justify-content: center;
+line-height: 35px;
+}
+.info-sec-img img{
+width: 450px;
+height: 300px;
+}
+.info-texts h2,h3{
+  color: rgb(0, 128, 115)!important;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 100;
   text-align: center;
-  line-height: 40px;
-  
+  line-height: 40px;  
 
-}.info-titles p{
+}.info-texts p{
   color: grey;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 13px;
@@ -510,8 +565,104 @@ object-fit: cover;
   height: 150px;
   border-radius: 10px;
 }
+.footer-section{
+  display: flex;
+  background-color: rgb(28, 133, 204);
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+.footer-img{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 2rem;
+ 
+}
+.footer-img img{
+  width: 90%;
+  height: 300px;
+  border-radius: 8px;
+}
+.footer-texts{
+  display: flex;
+   gap: 100px;
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+}
+.footer-first-sec h3,.footer-first-sec h4,.footer-scnd-sec h3 {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+}
+.footer-first-sec p,.footer-scnd-sec p{
+  color: white;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  line-height: 10px;
+  margin-top: 9px;
+}
 
+ 
+.footer-sub h5{
+  line-height: 10px;
+  font-weight: 100;
+  margin-top: 9px;
+}
+.footer-sub div{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  font-size: 10px;
+}
 
+@media(max-width:860px){
+  .abt-hospital{
+    display: flex;
+    flex-direction: column;
+  }
+  .abt-hospital img{
+    width: 100%!important;
+}
+.text-overlay {
+  width: 400px!important;
+  
+}
+.dr-img img{
+  width: 300px;
+}
+.dr-sec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.dr-sec-texts,.dr-sec-img{
+  display: flex!important;
+  justify-content: center!important;
+  width: 100%;
+}
+.info-sec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center!important;
+  align-items: center;
+}
+.info-sec h2{
+  font-size: 20px!important;
+}
+.info-sec p{
+  font-size: 13px!important;
+}
+}
 
 @media(max-width:540px){
     .head img{
@@ -530,6 +681,12 @@ object-fit: cover;
     .head-title{
         line-height: 15px;
     }
+    .home{
+      width: 100%;
+    }
+    nav{
+      width: 100%;
+    }
     .navbar{
        width: 90%;   
     }
@@ -544,24 +701,57 @@ object-fit: cover;
     
     .cards{
         margin-top: px;
+        width: 100%!important;
+        
     }
     .abt-hospital{
 display: flex;
 flex-direction: column;
 justify-content: center;
+
+
+ 
+
     }
     .abt-hospital img{
-        width: 100%;
+        width: 99%!important;
+        margin-left: 1px;
     }
     .abt-hospital-texts{
-        width: 100%;
+        width:100px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-left: 50px;
+        flex-wrap: wrap;
+        font-size: 10px;
         
     }
+    .dr-sec-texts,.dr-sec-img{
+     margin-left: -60px;
+    }
+    .dr-card {
+      display: flex;
+      flex-direction: column;
+    }
+    .dr-card h2{
+      font-size: 13px;
+    }
     .text-overlay {
-      width: 90%;
+      width: 200px!important;
+   
+      
+    }
+    .text-overlay h3{
+      font-size: 13px;
+    }
+    .text-overlay p{
+      font-size: 8px;
     }
     .dr-img img{
-      width: 100%;
+      width: 180px;
     }
     .service-section div{
       width: 80px;
@@ -572,8 +762,37 @@ justify-content: center;
     .service-section{
       margin-top: 2rem;
     }
-    .review-card,.pad{
+    .review-card{
       width: 90%;
+    }
+    .info-section{
+     margin-left: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .info-texts {
+      width:50%;
+    
+    }
+    .info-text img{
+      width: 15px;
+      height: 15px;
+      align-items: center;
+      margin-top: 12px;
+    }
+    
+    .info-texts h2,h3{
+      font-size: 12px;
+    }
+    .info-sec h2{
+      font-size: 13px!important;
+    }
+    .info-sec p{
+      font-size: 8px!important;
+    }
+    .info-sec-img img{
+      width: 300px;
     }
     .profile-pic,.profile-pic-1,.profile-pic-2{
       width: 50px;
@@ -584,6 +803,26 @@ justify-content: center;
     }
     .profile-card{
       margin-top: 1rem;
+    }
+    .footer-section,.footer-texts{
+      width: 100%;
+    }
+    .footer-img img{
+      height: 200px;
+    }
+    .footer-sub div{
+     text-align: center;
+    }
+    .footer-first-sec h3,.footer-first-sec h4,.footer-scnd-sec h3 {
+      font-size: 10px;
+    }
+    .footer-first-sec p,.footer-scnd-sec p{
+      font-size: 8px;
+    }
+    .footer-texts{
+      gap: 0;
+      display: flex;
+      justify-content: space-around;
     }
    
 
