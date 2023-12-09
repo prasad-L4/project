@@ -268,8 +268,248 @@ line-height: 25px;
   height: 250px;
   align-items: center;
 }
+.cmpny-logos{
+gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+
+}
+.cmpny-logos img{
+  width: 100px;
+  height: 100px;
+}
+.service{
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 4rem;
+  width: 100%;
+  height:auto;
+  background: linear-gradient( rgb(196, 228, 244), rgb(255, 253, 253) 50%, white 50% ,rgb(196, 228, 244), rgb(196, 228, 244));
+}
+.service h3,.reviews h3,.gallery h3{
+text-align: center!important;
+font-family: 'Times New Roman', Times, serif;
+color: #2596be;
+font-weight: 100;
+}
+.service-section{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 25px;
+flex-wrap: wrap;
+}
+.service-section div{
+  background-color:#2596be;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 2rem;
+}
+.service-section img{
+  width: 80px;
+  height: 80px;
+  align-items: center;
+}
+.reviews{
+  display: flex;
+  justify-content:center ;
+  margin-top: 4rem;
+  flex-direction: column;
+  align-items: center;
+}
+.review-card{
+  display: flex;
+  background-color: #2596be;
+  gap: 10px;
+  border-radius: 8px;
+  margin-top: 4rem;
+
+ width: 40%;
+  align-items: center;
+  padding: 13px;
+
+}
+.review-image{
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  border-radius: 50%;
+ 
+}
+.review-card img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
+  align-items:center ;
+}
+.review-card h4{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+.review-card span{
+  color: gold;
+}
+.review-card h6{
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.review-cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.review-card-1{
+  display: flex;
+  background-color: #2596be;
+  width: 300px;
+  margin-top: 3rem;
+  height: 130px;
+  justify-content: center;
+  padding-top: 1rem;
+  line-height: 19px;
+  border-radius: 10px;
+}
+.review-card-1 h3{
+  font-size: 30px;
+  color: white;
+  display: inline;
+  margin: 0;
+}
+.review-card-1 span{
+  color: gold;
+  font-size: 10px;
+  display: inline;
+  margin: 0;
+}
+.review-card-1 p{
+  display: inline;
+  margin: 0;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+
+}
+.profile-cards{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.profile-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+} 
+.profile-pic{
+  background-color:#e1a6c6 ;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+}
+.profile-pic-1{
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(207, 27, 159);
+}
+.profile-pic-2{
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(121, 20, 152);
+}
+.profile-pic h3 , h4{
+  color: rgb(201, 196, 196)
+}
+.profile-pic-1 h3,.profile-pic-2 h3{
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+.profile-name h4{
+  color: rgb(78, 75, 75);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100; 
+}
+.view-btn{
+  background-color: rgb(34, 33, 33);
+  color: white;
+  margin-top: 3rem;
+  width: 30%;
+  height: 40px;
+  border: none;
+}
+.info-section{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  line-height: 40px;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  justify-content: center;
+  gap:15px ;
+}
+.info-titles h2,h3{
+  color: rgb(0, 128, 115);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 100;
+  text-align: center;
+  line-height: 40px;
   
-  
+
+}.info-titles p{
+  color: grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+.info-text{
+  display: flex;
+  justify-content: center;
+}
+.pad{
+  width: 50%;
+height: 250px;
+object-fit: cover;
+}
+.gallery{
+  margin-top: 4rem;
+}
+.gallery-img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 17px;
+  margin-top: 3rem;
+}
+.gallery-img img{
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
 
 
 
@@ -323,4 +563,30 @@ justify-content: center;
     .dr-img img{
       width: 100%;
     }
+    .service-section div{
+      width: 80px;
+      height: 80px;
+      margin-top: 0;
+      
+    }
+    .service-section{
+      margin-top: 2rem;
+    }
+    .review-card,.pad{
+      width: 90%;
+    }
+    .profile-pic,.profile-pic-1,.profile-pic-2{
+      width: 50px;
+      height: 50px;
+    }
+    .prfl-name,.profile-name{
+      font-size: 12px;
+    }
+    .profile-card{
+      margin-top: 1rem;
+    }
+   
+
+   
+    
 }
